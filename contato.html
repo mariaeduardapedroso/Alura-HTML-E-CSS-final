@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--DICIONARIO-->
+    <title>Produtos - Barbearia Alura</title>
+    <link href="reset.css" rel="stylesheet">
+    <!--ZERAR O QUE O NAVEGADOR FAZ AUTO-->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="logo.png" alt="Logo alura"></h1>
+            <!--LOGO COMO "TITULO" PRINCIPAL-->
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <!--LINK USA LINK MESMO HTTP//-->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <label for="nomesobrenome">Nome e sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Maria Eduarda">
+            <!--id e for nomes iguais-->
+
+            <label for="email">Email</label>
+            <!--separar os campos-->
+            <input type="email" id="email" class="input-padrao" required placeholder="maria@gmail.com">
+            <!--INPUT QUE MUDA TECLADO DO SMARTFONE-->
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(12)99234-5432">
+            <!--INPUT QUE MUDA TECLADO DO SMARTFONE, PLACEHOLDER JÁ DEIXA ALGO ESCRITO NA CAIXA-->
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="70" rows="10" id="mensagem"></textarea>
+            <!--MAIS CONTEUDO DO QUE UMA LINHA DE TEXTO-->
+            <fieldset>
+                <legend>Como prefere nosso contato?</legend>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"
+                        required>Email</label>
+                <!--REQUIRED NO INPUT É CAIXA OBRIGATÓRIO-->
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"
+                        required>Telefone</label>
+                <!--INPUT DENTRO DO LABEL-->
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
+                        required checked>Whatsapp</label>
+                <!--Name deixa eles clicaveis uma vez não checkbox-->
+            </fieldset>
+            <!--FIELDSET É O DIV PROPRIO PRA FORM-->
+            <fieldset>
+                <legend>Qual horario prefere ser atendido</legend>
+                <!--LEGEND É O P -->
+                <select>
+                    <!--SELETOR-->
+                    <option>Manha</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por
+                email?</label>
+            <!--CHECKED (MARCA ALGO JÁ) REQUIRED DEIXA OBRIGATÓRIO E-->
+
+            <input type="submit" value="Enviar Furmulário" class="enviar">
+
+        </form>
+
+        <table>
+            <thead>
+                <!--CABEÇALHO TABELA-->
+                <th>Dia</th>
+                <!--COLUNAS-->
+                <th>Horario</th>
+                <thead>
+                <tbody> <!--CORPO DA TABELA-->
+                    <tr>
+                        <!--LINHAS-->
+                        <td>Segunda</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                    <tr>
+                        <!--LINHAS-->
+                        <td>Quarta</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                    <tr>
+                        <!--LINHAS-->
+                        <td>Sexta</td>
+                        <!--<td colspan="5"> DEIXA A CELULA JUNTA 5 CELULAS-->
+                        <td>8h - 20h</td>
+                    </tr>
+                </tbody>
+        </table>
+    </main>
+    <Footer>
+        <img src="logo-branco.png" alt="LOGO">
+        <!--IMPORTANTE USAR ALT EM IMAGEM PRO SITE TER MAIS ACESSIBILIDADE-->
+        <p class="copyright">&copy; Copyright Barbearia Alura</p>
+    </Footer>
+
+</body>
+
+
+</html>

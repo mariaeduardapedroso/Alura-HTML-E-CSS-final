@@ -1,0 +1,271 @@
+header{
+   background: #bbbbbb; 
+   padding: 20px 0;
+}
+nav li{
+    display: inline; /*DEIXAR LISTA NA LINHA*/
+    margin: 0 0 0 15px;/*AUMENTAR ESPAÇAMENTO DOS ITENS*/
+}
+
+nav a{ /*MENU NAV*/
+    text-transform: uppercase;/*TRANSFORMA TEXTO EM MAIUSCULO*/
+    color: black;
+    font-weight: bold;/*DEIXAR TEXTO NEGRITO*/
+    font-size: 22px;/*TAMANHO FONTE*/
+    text-decoration: none; /*TIRAR SUBLINHADO*/
+    
+}
+nav a:hover{ /*COLOCAR HOUVER NOS ELEMENTOS DO MENU NAV*/
+    color: #c78c19;
+    text-decoration: underline; /*SUBLINHADO*/
+}
+
+nav{
+    position: absolute; 
+    top: 110px;
+    right: 0;
+}
+
+.caixa{
+    width:  940px;
+    position: relative; /*POSIÇÃO RELATIVA DA CAIXA*/
+    margin: 0 auto; /*centralização auto da margem*/
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000; /*BORDA 2PX ENTRE O PADDING E A MARGEM*/
+    border-radius: 10px;/*TAMANHO DO RAIO da pra fazer medidas pra cada tbm*/
+}
+.produtos li:hover{ /*COLOCAR HOUVER PASSAR MOUSE NO elemento borda*/
+    border-color: #c78c19;
+}
+
+.produtos li:active{ /*VE QUANDO ATIVO*/
+    border-color: #088C19;
+}
+.produtos li:hover h2{ /*COLOCAR HOUVER NO elemento borda*/
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url('bg.jpg'); /*IMAGEM VAI SE REPLICANDO*/
+    padding: 40px 0;
+}
+
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{ /*TIPO INLINE*/
+    margin: 40px 0 ;
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao{ /*MESMA CONFIG/INFORMAÇÃO PRA 2 COISAS*/
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px; /*A propriedade padding serve para alterarmos o espaçamento interno, entre o conteúdo e a borda.*/
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px ;
+    border: none;
+    border-radius: 8px;
+    transition: 1s backgroud all;
+    /*deixa a transição DE TUDO do hover mais demorada*/
+    cursor: pointer;
+    /*MÃOZINHA PRA MOSTRAR QUE É CLICAVEL*/
+}
+
+.enviar:hover{
+    /*HOVER É QUANDO MOUSE ESTÁ EM CIMA*/
+    background: darkorange;
+    transform: scale(1.2);
+    /*AUMENTA EM 20% O BOTÃO*/
+    /*transform: rotate(); ROTACIONA*/
+
+}
+table{
+margin: 20px 0 40px;
+}
+thead{
+    background: #555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px ;
+}
+/*css da home*/
+.banner{
+width: 100%;
+}
+
+.titulo-principal{ /*NOME RUIM*/
+text-align: center;
+font-size: 2em;
+margin: 0 0 1em; /*um espaço da fonte*/
+clear: left; /*LIMPA O FLOAT*/
+color: rgba(0,0,0,0.3) ; /*CAMADA A MAIS QUE SÓ PEGA NO RGB CAMADA ALFA*/
+/*text-shadow: 2px 2px red; SOMBRA NO TEXTO*/
+
+}
+.principal p{
+    margin: 0 0 1em;
+    font-weight: strong;
+
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.imagembeneficios{
+width: 60%;
+/*AFETA TODOS OS ELEM DA PÁGINA*/
+}
+
+.utensilios{
+    width: 120px;
+    float: left; /*UM JEITO DE FLUTOAR ARRUMAR IMAGEM*/
+    margin: 0 20px 20px 0; /*CIMA DIREITO BAIXO ESQUERDA*/
+
+}
+
+body { /*INFORMAR QUE USAREMOS MONTSERERAT*/
+    font-family: 'Montserrat', sans-serif;
+}
+ .mapa{
+     padding: 3em 0;
+     background: linear-gradient(#FEFEFE, #888888);
+
+ }
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
+}
+ .mapa p{
+     margin: 2em;
+     text-align: center;
+ }
+
+ .beneficios {
+	padding: 3em 0;
+	background: #888888;
+    /*box-shadow: inset 0 0  30px red;/* SOMBRA INTERNA*/
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.itens {
+	line-height: 1.5;
+}
+
+.itens:first-child {
+	font-weight: bold;
+}
+
+.imagem-beneficios {
+	width: 60%;
+    opacity: 1;/*OPACIDADE*/
+    transition: 400ms;
+    box-shadow: 10px 10px 5px 20px black;/* ADD SOMBRA X Y SHADDOW(OPACIDADE) INTENDIDADE-BORDA COR*/
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;/*OPACIDADE */
+}
+
+/*.banner > algo* SELECIONAR FILHO DE X
+IMG + P PARAGRAFO QUE VEM LOGO APOS UMA IMAGEM
+IMG ~P TODOS OS DELETORES QUE VEM DEPOIS DA IMAGEM
+.principal P:not(missao) EXCLUIR ALGUM*/
+
+/*width: calc( (100% / 3) - 10px )
+width: calc( 33% - 10px ) PARA DEIXAR A IMAGEM CORRETA E CSS FAZER CALCULO*/ 
+ @media screen AND (max-width: 480px) { /*PARA SABBER A TELA*/
+     /*ENTREGAR UM ESTILO DIFERENTE*/
+     .caixa, .principal, .conteudo-beneficios,.mapa-conteudo,.video{
+         width: auto;
+     }
+     h1{
+     text-align: center;        
+
+    }
+    nav{
+        position: static;
+    }
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
+ }
